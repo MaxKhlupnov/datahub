@@ -166,7 +166,7 @@ services:
         - curl -sS --fail 'http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=0s'
           || exit 1
       hostname: elasticsearch
-      image: elasticsearch:7.9.3
+      image: elasticsearch:7.17.3
       mem_limit: 1g
       ports:
       - 9200:9200

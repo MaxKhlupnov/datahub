@@ -35,7 +35,7 @@ public class EventFormatterTest {
         .entityType("dataset")
         .entityUrn("urn:li:dataset:(urn:li:dataPlatform:bigquery,my-project.my-dataset.user-table,PROD)")
         .upsert()
-        .aspect(new DatasetProperties().setDescription("This is the canonical User profile dataset œ∑´´†¥¨ˆˆπ“‘åß∂ƒ©˙∆˚¬…æΩ≈ç√∫˜˜≤≥ç"))
+        .aspect(new DatasetProperties().setDescription("This is the canonical User profile dataset "))
         .build();
     EventFormatter eventFormatter = new EventFormatter();
     MetadataChangeProposal mcp = eventFormatter.convert(mcpw);
